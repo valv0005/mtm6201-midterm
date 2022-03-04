@@ -1,0 +1,490 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* -----------------------------------------------------------Amalia's code start here --------------------------- */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/**** **************  Navigation/Header section starts (Mobile) *****/
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+    padding: 14px;
+}
+
+header {
+    background: #E7AD99;
+}
+
+nav ul {
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+
+
+.nav-links ul li a {
+    color: #fff;
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #fff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+} 
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.logo img {
+    width: 150px;
+    margin: auto;
+}
+
+.nav-icons {
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.nav-icons a i {
+    color:#fff;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.nav-icons a i::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #41160D;
+    display: block;
+    margin: auto;
+    transition: 0.5s;   
+}
+
+.nav-icons a i:hover::after {
+    width: 100%;
+}
+
+/**** *************** Navigation/Header sections ends (Mobile) *****/
+
+@media screen and (min-width: 760px) {
+    .container  {
+        width: 706px;
+        margin: 0 auto;
+    }    
+}
+
+@media(min-width: 1200px) {
+/* Section Navigation/header Desktop starts */
+    
+    .container {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        height: 308px;
+        background-color: #E7AD99;
+    }
+    
+    nav {
+        margin: 0 auto;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .upper a {
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-list {
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0;
+    }
+
+    .nav-list .item {
+        display: inline-block;
+    }
+
+    .logo img{
+        width: 284.5px;
+        margin: 12px;
+        margin-left: 72px;
+        margin-right: 127px;
+    }
+
+    .nav-links ul li {
+        list-style: none;
+        display: inline-block;
+        padding: 8px 53px;
+    }
+
+    .nav-links ul li a {
+        color: #41160D;
+        text-decoration: none;
+        font-size: 56px;
+        font-family: 'Quicksand', sans-serif;
+    }
+
+    .nav-links ul li::after {
+        content: '';
+        width: 0;
+        height: 2px;
+        background: #fff;
+        display: block;
+        margin: auto;
+        transition: 0.5s;
+    } 
+
+    .nav-links ul li:hover::after {
+        width: 100%;
+    }
+
+    .nav-icons {
+        display: flex;
+        margin-left: 75px;
+        margin-right: 72px;
+    }
+
+    .nav-icons a i {
+        color:#fff;
+        font-size: 49px;
+        padding: 14.5px;
+    }
+
+    .nav-icons a i::after {
+        content: '';
+        width: 0;
+        height: 2px;
+        background: #41160D;
+        display: block;
+        margin: auto;
+        transition: 0.5s;   
+    }
+
+    .nav-icons a i:hover::after {
+        width: 100%;
+    }
+
+}
+
+/*******************Section Navigation/header Desktop starts ********************/
+
+/* Banner starts*/
+
+.banner { 
+    min-height: 100vh;
+    width: 100%;
+    height:1080px;
+    background-image: linear-gradient(rgba(231,173,153,0.4),rgba(231,173,153,0.4)),url('../images/david-holifield-g5bgYkKa8y0-unsplash1920x1080.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.banner h1 {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-size: 100px;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    text-shadow: 2px 2px 8px black;
+}
+
+/* Banner starts*/
+
+/* Section header Desktop ends */
+
+/* Section Popular starts ------------ */
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    background-color: teal;
+}
+
+h2 {
+    font-size: 75px;
+    font-weight: 600 ;
+    font-family: 'Barlow', sans-serif;
+    color: #424E5A;
+}
+
+.popular {
+    width: 75.26%;
+    margin: auto;
+    text-align: center;
+    margin-top: 8px;
+}
+
+.popular-col {
+    flex-basis: 51%;
+    gap: 60px;
+    margin-top: 13px;
+    margin-right: 30px;
+    margin-left: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.popular-col img {
+    width: 100%;
+    display: block;
+}
+
+.layer-0 {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.layer-0:hover {
+    background: rgba(231,173,153,0.4);
+}
+
+.layer-0 h3 {
+    width: 100%;
+    font-weight: 200;
+    color: #41160D;
+    font-size: 45px;
+    font-family: 'Quicksand', sans-serif;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer-0:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+/* Styles mobile popular section */
+
+/* Mood section **************************************************************/
+
+.mood {
+    margin: 100px auto;
+    background-color: white;
+    background-image: url('../images/mood1920x454.jpg');
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    height: 454px;
+    display: block; 
+    margin-top: 89px;
+    margin-bottom: 35px;
+}
+
+.mood-content{
+    vertical-align: center;
+}
+
+.mood-content h2{
+    text-align: right;
+    position: absolute;
+    color: #fff;
+    top: 40%;
+    right: 210px;
+    transform: (-40%);
+    display: block;
+}
+
+/********* Mood section ends *********************************************************************************/
+
+/*******************************************Categories section starts ********************************/
+
+.categories {
+    width: 90.72%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: tomato;
+}
+
+.categories h2 {
+    padding-bottom: 13px;
+    margin-bottom: 0;
+}
+
+/* flexblox*/
+.cat-col {
+    flex-basis: 32%;
+    margin-bottom: 30px;
+    gap: 35px;
+    position: relative; 
+    overflow: hidden; 
+    background-color: aqua;
+}
+
+.cat-col img{
+    width: 100%;
+}
+
+.layer {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.layer:hover {
+    background: rgba(231,173,153,0.4);
+}
+
+
+.cat-col h3 {
+    width: 100%;
+    font-weight: 600;
+    color: #41160D;
+    font-size: 45px;
+    font-family: 'Quicksand', sans-serif;
+    top: 52px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    background-color: beige;
+}
+
+/*******************************************Categories section ends ********************************/
+
+/*******************************************Footer section starts ********************************/
+
+footer{
+    margin-top: 116px;
+    width: 100%;
+    text-align: center;
+    background-color: #E7AD99;
+    padding-top: 41px;
+    padding-bottom: 41px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #41160D;
+}
+
+.footer-row {
+    color:#41160D;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 45px;
+    padding-bottom: 68px;
+}
+
+footer p {
+    color:#41160D;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 45px;
+}
+
+
+/*******************************************Footer section ends ********************************/
+
+@media screen and (min-widht: 760px) {
+    .banner h1 {
+        background-color: aqua;
+        font-size: 20px;
+    }
+
+    .mood-content h2 {
+        font-size: 20px;
+        text-align: center;
+        top: 0;
+        right: 50%;
+        transform: (-50%);
+    }
+}
+
+@media(max-width: 760px){
+    .row {
+        flex-direction: column;
+        margin: auto;
+        width: auto;
+    }
+
+    .mood-content h2 {
+        margin: 0, auto;
+        text-align: center;
+        right: 0;
+        top: 35%;
+    }
+}
