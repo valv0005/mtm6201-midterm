@@ -487,3 +487,106 @@ footer p {
     }
 
 }
+
+
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: ABOUT PAGE:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+
+.sub-header {
+    min-height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(231,173,153,0.4),rgba(231,173,153,0.4)),url('../images/sergei-solo-XmefirQLMfY-unsplash1920-1278.jpg');
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.sub-header h1 {
+    margin-top: 100px;
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    font-size: 100px;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    text-shadow: 2px 2px 8px black;
+    transform: translate(-50%,-50%);
+    }
+
+p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+}
+
+.about-us {
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.about-col {
+    flex-basis: 48%;
+    padding: 20px;
+}
+
+.about-col img {
+    width:100%;
+}
+
+.about-col h2 {
+    padding: 0;
+}
+
+.about-col p {
+    padding: 5px 0 5px;
+}
+
+.values {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.values h2{
+    text-align: center;
+}
+
+.values-col {
+    flex-basis: 31%;
+    background: #E7AD99;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+
+.values-col h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 45px;
+}
+
+.values-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+
+@media(max-width: 760px){
+    .sub-header h1 {
+        font-size: 60px;
+        top: 70%;
+        left: 70%;
+        text-align: center;
+        transform: translate(-70%,-70%);
+    }
+
+    h2 {
+        font-size: 60px;
+    }
+}
