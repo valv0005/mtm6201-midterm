@@ -268,10 +268,8 @@ nav ul {
 
 /* Section Popular starts ------------ */
 .row {
-    /* margin-top: 5%; */
     display: flex;
     justify-content: space-between;
-    background-color: teal;
 }
 
 h2 {
@@ -376,7 +374,6 @@ h2 {
     width: 90.72%;
     margin: 0 auto;
     text-align: center;
-    background-color: tomato;
 }
 
 .categories h2 {
@@ -588,5 +585,114 @@ p {
 
     h2 {
         font-size: 60px;
+    }
+}
+
+
+
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::Contact page ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+.sub-header1 {
+    min-height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(231,173,153,0.4),rgba(231,173,153,0.4)),url('../images/joanna-kosinska-Prfs32wh-o4-unsplash1920x1278.jpg');
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.sub-header1 h1 {
+    margin-top: 100px;
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    font-size: 100px;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    text-shadow: 2px 2px 8px black;
+    transform: translate(-50%,-50%);
+}
+
+.location {
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+
+.location iframe {
+    width: 100%;
+}
+
+.contact-us{
+    width: 80%;
+    margin: auto;
+}
+
+.contact-col{
+    flex-basis: 47%;
+    margin-bottom: 30px;
+}
+
+.contact-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.contact-col div .material-icons{
+    font-size: 28px;
+    color: #41160D;
+    margin: 10px;
+    margin-right: 30px;
+}
+
+.contact-col div p{
+    padding: 0;
+}
+
+.contact-col input, .contact-col textarea {
+    width: 100%;
+    padding: 15px;
+    margin-top: 8px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #424E5A;
+    box-sizing: border-box;
+}
+
+.contact-col form label {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+}
+
+.contact-col form .cake-btn {
+    display: inline-block;
+    text-decoration: none;
+    color:#fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 20px;
+    background: #E7AD99;
+    cursor: pointer;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.contact-col form .cake-btn:hover{
+    border: 1px solid #E7AD99;
+    background: #41160D;
+    transition: 1s;
+}
+
+@media(max-width: 760px){
+    .sub-header1 h1 {
+        font-size: 60px;
+        top: 70%;
+        left: 70%;
+        text-align: center;
+        transform: translate(-70%,-70%);
     }
 }
