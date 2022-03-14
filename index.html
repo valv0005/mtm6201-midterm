@@ -7,14 +7,6 @@
     <title>Midterm</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="css/styles.css" rel="stylesheet">
-    <!--Quicksand font for replace Caviar Dreams-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!--Barlow font for replace Cooper Hewitt-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -51,13 +43,55 @@
         <h2 id="about">Most Popular</h2>
         <div class="row">
             <div class="popular-col">
-                <img src="images/dani-CLtLGfF6mwI-unsplash692x450.jpg" alt="salted-caramel-icing">
+                <!-- <img src="images/dani-CLtLGfF6mwI-unsplash692x450.jpg" alt="salted-caramel-icing"> -->
+                <picture>
+                    <source
+                        media="(max-width: 767px)"
+                        sizes="(max-width: 450px) 100vw, 450px"
+                        srcset="
+                        images/american-heritage-chocolate-TZFshUFzWRQ-unsplash692x450_sdw5ed_ar_1_1,c_fill,g_auto__c_scale,w_200.jpg 200w,
+                        images/american-heritage-chocolate-TZFshUFzWRQ-unsplash692x450_sdw5ed_ar_1_1,c_fill,g_auto__c_scale,w_450.jpg 450w">
+                    <source
+                        media="(min-width: 768px) and (max-width: 991px)"
+                        sizes="(max-width: 857px) 70vw, 600px"
+                        srcset="
+                        images/american-heritage-chocolate-TZFshUFzWRQ-unsplash692x450_sdw5ed_ar_4_3,c_fill,g_auto__c_scale,w_538.jpg 538w,
+                        images/american-heritage-chocolate-TZFshUFzWRQ-unsplash692x450_sdw5ed_ar_4_3,c_fill,g_auto__c_scale,w_600.jpg 600w">
+                    <img
+                        sizes="(max-width: 1730px) 40vw, 692px"
+                        srcset="
+                        images/american-heritage-chocolate-TZFshUFzWRQ-unsplash692x450_sdw5ed_c_scale,w_397.jpg 397w,
+                        images/american-heritage-chocolate-TZFshUFzWRQ-unsplash692x450_sdw5ed_c_scale,w_692.jpg 692w"
+                        src="images/american-heritage-chocolate-TZFshUFzWRQ-unsplash692x450_sdw5ed_c_scale,w_692.jpg"
+                        alt="salted-caramel-icing">
+                </picture>
                 <div class="layer-0">
                     <h3>Salted caramel icing</h3>
                 </div>
             </div>
             <div class="popular-col">
-                <img src="images/american-heritage-chocolate-TZFshUFzWRQ-unsplash692x450.jpg" alt="salty-cake-pop">
+                <!-- <img src="images/american-heritage-chocolate-TZFshUFzWRQ-unsplash692x450.jpg" alt="salty-cake-pop"> -->
+                <picture>
+                    <source
+                        media="(max-width: 767px)"
+                        sizes="(max-width: 450px) 100vw, 450px"
+                        srcset="
+                        images/dani-CLtLGfF6mwI-unsplash692x450_vukppg_ar_1_1,c_fill,g_auto__c_scale,w_200.jpg 200w,
+                        images/dani-CLtLGfF6mwI-unsplash692x450_vukppg_ar_1_1,c_fill,g_auto__c_scale,w_450.jpg 450w">
+                    <source
+                        media="(min-width: 768px) and (max-width: 991px)"
+                        sizes="(max-width: 857px) 70vw, 600px"
+                        srcset="
+                        images/dani-CLtLGfF6mwI-unsplash692x450_vukppg_ar_4_3,c_fill,g_auto__c_scale,w_538.jpg 538w,
+                        images/dani-CLtLGfF6mwI-unsplash692x450_vukppg_ar_4_3,c_fill,g_auto__c_scale,w_600.jpg 600w">
+                    <img
+                        sizes="(max-width: 1730px) 40vw, 692px"
+                        srcset="
+                        images/dani-CLtLGfF6mwI-unsplash692x450_vukppg_c_scale,w_397.jpg 397w,
+                        images/dani-CLtLGfF6mwI-unsplash692x450_vukppg_c_scale,w_692.jpg 692w"
+                        src="images/dani-CLtLGfF6mwI-unsplash692x450_vukppg_c_scale,w_692.jpg"
+                        alt="salty-cake-pop">
+                </picture>
                 <div class="layer-0">
                     <h3>Salty cake pop</h3>
                 </div>
@@ -75,19 +109,66 @@
         <h2>Categories</h2>
         <div class="row">
                 <div class="cat-col">
-                    <img src="images/deva-williamson-ntfGWVbBiO0-unsplash557x683edit.jpg" alt="delicious-cake">
+                    <!-- <img src="images/deva-williamson-ntfGWVbBiO0-unsplash557x683edit.jpg" alt="delicious-cake"> -->
+                    <picture>
+                        <source
+                            media="(max-width: 767px)"
+                            sizes="(max-width: 557px) 100vw, 557px"
+                            srcset="
+                            images/deva-williamson-ntfGWVbBiO0-unsplash557x683edit_ocxtrl_ar_1_1,c_fill,g_auto__c_scale,w_200.jpg 200w,
+                            images/deva-williamson-ntfGWVbBiO0-unsplash557x683edit_ocxtrl_ar_1_1,c_fill,g_auto__c_scale,w_557.jpg 557w">
+                            <img
+                            sizes="(max-width: 1393px) 40vw, 557px"
+                            srcset="
+                            images/deva-williamson-ntfGWVbBiO0-unsplash557x683edit_ocxtrl_c_scale,w_397.jpg 397w,
+                            images/deva-williamson-ntfGWVbBiO0-unsplash557x683edit_ocxtrl_c_scale,w_557.jpg 557w"
+                            src="images/deva-williamson-ntfGWVbBiO0-unsplash557x683edit_ocxtrl_c_scale,w_557.jpg"
+                            alt="delicious-cake">
+                    </picture>
                     <div class="layer">
                         <h3>Cakes</h3>
                     </div>
                 </div>
                 <div class="cat-col">
-                    <img src="images/kaouther-djouada-hcEDfkiVmMI-unsplash557x683edit.jpg" alt="chocolate-cake">
+                    <!-- <img src="images/kaouther-djouada-hcEDfkiVmMI-unsplash557x683edit.jpg" alt="chocolate-cake"> -->
+                    <picture>
+                            <source
+                            media="(max-width: 767px)"
+                            sizes="(max-width: 557px) 100vw, 557px"
+                            srcset="
+                            images/kaouther-djouada-hcEDfkiVmMI-unsplash557x683edit_qx4cbe_ar_1_1,c_fill,g_auto__c_scale,w_200.jpg 200w,
+                            images/kaouther-djouada-hcEDfkiVmMI-unsplash557x683edit_qx4cbe_ar_1_1,c_fill,g_auto__c_scale,w_464.jpg 464w,
+                            images/kaouther-djouada-hcEDfkiVmMI-unsplash557x683edit_qx4cbe_ar_1_1,c_fill,g_auto__c_scale,w_557.jpg 557w">
+                            <img
+                            sizes="(max-width: 1393px) 40vw, 557px"
+                            srcset="
+                            images/kaouther-djouada-hcEDfkiVmMI-unsplash557x683edit_qx4cbe_c_scale,w_397.jpg 397w,
+                            images/kaouther-djouada-hcEDfkiVmMI-unsplash557x683edit_qx4cbe_c_scale,w_557.jpg 557w"
+                            src="images/kaouther-djouada-hcEDfkiVmMI-unsplash557x683edit_qx4cbe_c_scale,w_557.jpg"
+                            alt="chocolate-cake">
+                    </picture>
                     <div class="layer">
                         <h3>Healthy</h3>
                     </div>
                 </div>
                 <div class="cat-col">
-                    <img src="images/tai-s-captures-Dl09VLx2JqM-unsplash557x683edit.jpg" alt="unicorn-cake-pop">
+                    <!-- <img src="images/tai-s-captures-Dl09VLx2JqM-unsplash557x683edit.jpg" alt="unicorn-cake-pop"> -->
+                    <picture>
+                            <source
+                            media="(max-width: 767px)"
+                            sizes="(max-width: 557px) 100vw, 557px"
+                            srcset="
+                            images/tai-s-captures-Dl09VLx2JqM-unsplash557x683edit_pxyro2_ar_1_1,c_fill,g_auto__c_scale,w_200.jpg 200w,
+                            images/tai-s-captures-Dl09VLx2JqM-unsplash557x683edit_pxyro2_ar_1_1,c_fill,g_auto__c_scale,w_525.jpg 525w,
+                            images/tai-s-captures-Dl09VLx2JqM-unsplash557x683edit_pxyro2_ar_1_1,c_fill,g_auto__c_scale,w_557.jpg 557w">
+                            <img
+                            sizes="(max-width: 1393px) 40vw, 557px"
+                            srcset="
+                            images/tai-s-captures-Dl09VLx2JqM-unsplash557x683edit_pxyro2_c_scale,w_397.jpg 397w,
+                            images/tai-s-captures-Dl09VLx2JqM-unsplash557x683edit_pxyro2_c_scale,w_557.jpg 557w"
+                            src="images/tai-s-captures-Dl09VLx2JqM-unsplash557x683edit_pxyro2_c_scale,w_557.jpg"
+                            alt="unicorn-cake-pop">
+                    </picture>
                     <div class="layer">
                         <h3>Cake-Pop</h3>
                     </div>
