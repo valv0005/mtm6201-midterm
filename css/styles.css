@@ -366,7 +366,7 @@ nav ul {
     }    
 }
 
-@media(min-width: 1200px) {
+@media(min-width: 1920px) {
 /* Section Navigation/header Desktop starts */
     
     .container {
@@ -783,7 +783,7 @@ p {
 }
 
 .about-us {
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
     padding-top: 80px;
     padding-bottom: 50px;
