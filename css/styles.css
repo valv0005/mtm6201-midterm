@@ -366,7 +366,7 @@ nav ul {
     }    
 }
 
-@media(min-width: 1920px) {
+@media(min-width: 1200px) {
 /* Section Navigation/header Desktop starts */
     
     .container {
